@@ -11,9 +11,11 @@ import UIKit
 
 class JoinSLViewController: UIViewController {
 
+    @IBOutlet weak var joinSLTextField: UITextField!
+    @IBOutlet weak var joinButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        joinButton.applyButtonDesign()
     }
 
 
