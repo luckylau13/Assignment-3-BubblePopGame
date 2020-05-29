@@ -12,3 +12,11 @@ This project is worth 30% of the overall mark for this subject.
 1. presentation in tutorial
 2. submit codes in Github.
 
+
+
+
+Group member:
+Lucky Lau 
+Wen LongHeng 
+Beng Sophea Vong 
+
