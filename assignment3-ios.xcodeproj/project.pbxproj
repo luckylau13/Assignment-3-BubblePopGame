@@ -7,19 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5089B4F2480E40900D69E78 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5089B4E2480E40900D69E78 /* SignUpViewController.swift */; };
+		B5089B512480E4DE00D69E78 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5089B502480E4DE00D69E78 /* LoginViewController.swift */; };
+		B5089B532480E53E00D69E78 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5089B522480E53E00D69E78 /* ForgetPasswordViewController.swift */; };
+		B5089B552480E58300D69E78 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5089B542480E58300D69E78 /* ResetPasswordViewController.swift */; };
+		B5089B572480E60A00D69E78 /* CreateSLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5089B562480E60A00D69E78 /* CreateSLViewController.swift */; };
+		B5089B592480E65B00D69E78 /* CreateJoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5089B582480E65B00D69E78 /* CreateJoinViewController.swift */; };
+		B5089B5B2480E69600D69E78 /* JoinSLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5089B5A2480E69600D69E78 /* JoinSLViewController.swift */; };
+		B5089B5D2480E6D300D69E78 /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5089B5C2480E6D300D69E78 /* ShoppingListViewController.swift */; };
 		E368317C2477B48C000FF793 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368317B2477B48C000FF793 /* AppDelegate.swift */; };
 		E368317E2477B48C000FF793 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368317D2477B48C000FF793 /* SceneDelegate.swift */; };
-		E36831802477B48C000FF793 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368317F2477B48C000FF793 /* ViewController.swift */; };
+		E36831802477B48C000FF793 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368317F2477B48C000FF793 /* HomeViewController.swift */; };
 		E36831832477B48C000FF793 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E36831812477B48C000FF793 /* Main.storyboard */; };
 		E36831852477B491000FF793 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E36831842477B491000FF793 /* Assets.xcassets */; };
 		E36831882477B491000FF793 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E36831862477B491000FF793 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B5089B4E2480E40900D69E78 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B5089B502480E4DE00D69E78 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B5089B522480E53E00D69E78 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		B5089B542480E58300D69E78 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		B5089B562480E60A00D69E78 /* CreateSLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSLViewController.swift; sourceTree = "<group>"; };
+		B5089B582480E65B00D69E78 /* CreateJoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateJoinViewController.swift; sourceTree = "<group>"; };
+		B5089B5A2480E69600D69E78 /* JoinSLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinSLViewController.swift; sourceTree = "<group>"; };
+		B5089B5C2480E6D300D69E78 /* ShoppingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
 		E36831782477B48C000FF793 /* assignment3-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "assignment3-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E368317B2477B48C000FF793 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E368317D2477B48C000FF793 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E368317F2477B48C000FF793 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E368317F2477B48C000FF793 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E36831822477B48C000FF793 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E36831842477B491000FF793 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E36831872477B491000FF793 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,11 +74,19 @@
 			children = (
 				E368317B2477B48C000FF793 /* AppDelegate.swift */,
 				E368317D2477B48C000FF793 /* SceneDelegate.swift */,
-				E368317F2477B48C000FF793 /* ViewController.swift */,
+				E368317F2477B48C000FF793 /* HomeViewController.swift */,
 				E36831812477B48C000FF793 /* Main.storyboard */,
 				E36831842477B491000FF793 /* Assets.xcassets */,
 				E36831862477B491000FF793 /* LaunchScreen.storyboard */,
 				E36831892477B491000FF793 /* Info.plist */,
+				B5089B4E2480E40900D69E78 /* SignUpViewController.swift */,
+				B5089B502480E4DE00D69E78 /* LoginViewController.swift */,
+				B5089B522480E53E00D69E78 /* ForgetPasswordViewController.swift */,
+				B5089B542480E58300D69E78 /* ResetPasswordViewController.swift */,
+				B5089B562480E60A00D69E78 /* CreateSLViewController.swift */,
+				B5089B582480E65B00D69E78 /* CreateJoinViewController.swift */,
+				B5089B5A2480E69600D69E78 /* JoinSLViewController.swift */,
+				B5089B5C2480E6D300D69E78 /* ShoppingListViewController.swift */,
 			);
 			path = "assignment3-ios";
 			sourceTree = "<group>";
@@ -138,9 +162,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E36831802477B48C000FF793 /* ViewController.swift in Sources */,
+				B5089B5D2480E6D300D69E78 /* ShoppingListViewController.swift in Sources */,
+				B5089B592480E65B00D69E78 /* CreateJoinViewController.swift in Sources */,
+				B5089B5B2480E69600D69E78 /* JoinSLViewController.swift in Sources */,
+				E36831802477B48C000FF793 /* HomeViewController.swift in Sources */,
+				B5089B572480E60A00D69E78 /* CreateSLViewController.swift in Sources */,
 				E368317C2477B48C000FF793 /* AppDelegate.swift in Sources */,
+				B5089B4F2480E40900D69E78 /* SignUpViewController.swift in Sources */,
+				B5089B512480E4DE00D69E78 /* LoginViewController.swift in Sources */,
+				B5089B532480E53E00D69E78 /* ForgetPasswordViewController.swift in Sources */,
 				E368317E2477B48C000FF793 /* SceneDelegate.swift in Sources */,
+				B5089B552480E58300D69E78 /* ResetPasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
