@@ -75,9 +75,64 @@
                     <view key="view" contentMode="scaleToFill" id="Hhm-fU-sqm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name your shopping list.." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sVG-GG-Rni">
+                                <rect key="frame" x="83" y="109" width="248.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter shopping list name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KC0-S4-vx9">
+                                <rect key="frame" x="83" y="77" width="219" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shopping list code:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qt-d7-2Qv">
+                                <rect key="frame" x="123.5" y="275" width="167" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDr-xg-Jw5">
+                                <rect key="frame" x="87" y="178" width="240" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="j3r-QO-ksy"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="tps-cg-8Zj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Create"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CODE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1w-Dz-8yk">
+                                <rect key="frame" x="153" y="314" width="108" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.080231872030335549" green="0.22104219951967041" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sVG-GG-Rni" firstAttribute="leading" secondItem="KC0-S4-vx9" secondAttribute="leading" id="1aA-Up-0yG"/>
+                            <constraint firstItem="sVG-GG-Rni" firstAttribute="centerX" secondItem="dgd-dV-Lyo" secondAttribute="centerX" id="2Xl-Wu-b3w"/>
+                            <constraint firstItem="p1w-Dz-8yk" firstAttribute="centerX" secondItem="4qt-d7-2Qv" secondAttribute="centerX" id="5Ww-jO-5Um"/>
+                            <constraint firstItem="sVG-GG-Rni" firstAttribute="top" secondItem="KC0-S4-vx9" secondAttribute="bottom" constant="8" id="5jV-KF-9WP"/>
+                            <constraint firstItem="p1w-Dz-8yk" firstAttribute="top" secondItem="4qt-d7-2Qv" secondAttribute="bottom" constant="15" id="6ZN-ON-WB8"/>
+                            <constraint firstItem="4qt-d7-2Qv" firstAttribute="top" secondItem="PDr-xg-Jw5" secondAttribute="bottom" constant="47" id="Bz7-Fl-iTA"/>
+                            <constraint firstItem="PDr-xg-Jw5" firstAttribute="top" secondItem="sVG-GG-Rni" secondAttribute="bottom" constant="35" id="HDH-y7-Xlp"/>
+                            <constraint firstItem="sVG-GG-Rni" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dgd-dV-Lyo" secondAttribute="leading" constant="50" id="KRl-nI-v8K"/>
+                            <constraint firstItem="dgd-dV-Lyo" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KC0-S4-vx9" secondAttribute="trailing" symbolic="YES" id="ORs-RW-vHH"/>
+                            <constraint firstItem="4qt-d7-2Qv" firstAttribute="centerX" secondItem="PDr-xg-Jw5" secondAttribute="centerX" id="Sgd-Bm-atx"/>
+                            <constraint firstItem="dgd-dV-Lyo" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sVG-GG-Rni" secondAttribute="trailing" constant="50" id="W2V-XW-DUI"/>
+                            <constraint firstItem="PDr-xg-Jw5" firstAttribute="centerX" secondItem="dgd-dV-Lyo" secondAttribute="centerX" id="ba2-sY-tTA"/>
+                            <constraint firstItem="KC0-S4-vx9" firstAttribute="top" secondItem="dgd-dV-Lyo" secondAttribute="top" constant="33" id="vr5-qd-Z2x"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dgd-dV-Lyo"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ACA-Yp-J6c"/>
+                    <connections>
+                        <outlet property="codeLabel" destination="p1w-Dz-8yk" id="oym-SE-2jq"/>
+                        <outlet property="createButton" destination="PDr-xg-Jw5" id="xjj-Vf-lkb"/>
+                        <outlet property="shoppingListTextfield" destination="sVG-GG-Rni" id="vN9-hR-4h8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bC-WP-hha" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,9 +160,48 @@
                     <view key="view" contentMode="scaleToFill" id="yKJ-HK-6lc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3N-YT-6a6">
+                                <rect key="frame" x="179" y="161" width="56" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6D-DS-tBP">
+                                <rect key="frame" x="57" y="308" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YYb-Aa-hQM"/>
+                                    <constraint firstAttribute="width" constant="300" id="enT-hu-F8F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Create Shopping List"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVg-Uf-WL8">
+                                <rect key="frame" x="57" y="400" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="0Zs-JO-VvD"/>
+                                    <constraint firstAttribute="height" constant="50" id="7e9-bQ-Cfa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Join Shopping List"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1XJ-yE-1iY" firstAttribute="bottom" secondItem="Q6D-DS-tBP" secondAttribute="bottom" constant="504" id="9gS-Hf-kmq"/>
+                            <constraint firstItem="s3N-YT-6a6" firstAttribute="top" secondItem="1XJ-yE-1iY" secondAttribute="top" constant="117" id="Acx-0T-df5"/>
+                            <constraint firstItem="Q6D-DS-tBP" firstAttribute="centerX" secondItem="1XJ-yE-1iY" secondAttribute="centerX" id="AkV-fg-LSf"/>
+                            <constraint firstItem="s3N-YT-6a6" firstAttribute="centerX" secondItem="1XJ-yE-1iY" secondAttribute="centerX" id="Ee5-sg-Gdv"/>
+                            <constraint firstItem="oVg-Uf-WL8" firstAttribute="centerX" secondItem="1XJ-yE-1iY" secondAttribute="centerX" id="Mwm-WI-Qsp"/>
+                            <constraint firstItem="oVg-Uf-WL8" firstAttribute="top" secondItem="Q6D-DS-tBP" secondAttribute="bottom" constant="42" id="pca-UD-cvd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1XJ-yE-1iY"/>
                     </view>
+                    <connections>
+                        <outlet property="createSLButton" destination="Q6D-DS-tBP" id="I62-D1-XZ9"/>
+                        <outlet property="joinSLButton" destination="oVg-Uf-WL8" id="SSZ-R8-aFK"/>
+                        <outlet property="userLabel" destination="s3N-YT-6a6" id="thk-6R-ITi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IEF-Kj-bYs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -120,9 +214,47 @@
                     <view key="view" contentMode="scaleToFill" id="Fii-Cb-FvJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Shopping list code.." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YZg-Bw-uVl">
+                                <rect key="frame" x="107" y="111" width="200" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter shopping list code:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cie-SL-gxy">
+                                <rect key="frame" x="107" y="79" width="214" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEB-Fe-0Vb">
+                                <rect key="frame" x="87" y="173" width="240" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="0Wt-Vy-g8V"/>
+                                    <constraint firstAttribute="height" constant="50" id="VRu-83-aMe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Join"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dog-CW-yb4" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cie-SL-gxy" secondAttribute="trailing" symbolic="YES" id="0FZ-jF-BYt"/>
+                            <constraint firstItem="YZg-Bw-uVl" firstAttribute="leading" secondItem="cie-SL-gxy" secondAttribute="leading" id="5Kp-GV-guZ"/>
+                            <constraint firstItem="dog-CW-yb4" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YZg-Bw-uVl" secondAttribute="trailing" constant="82" id="D33-KT-m6Q"/>
+                            <constraint firstItem="YZg-Bw-uVl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dog-CW-yb4" secondAttribute="leading" constant="82" id="DaJ-ee-ir9"/>
+                            <constraint firstItem="YZg-Bw-uVl" firstAttribute="centerX" secondItem="dog-CW-yb4" secondAttribute="centerX" id="Gsf-bg-kol"/>
+                            <constraint firstItem="cie-SL-gxy" firstAttribute="top" secondItem="dog-CW-yb4" secondAttribute="top" constant="35" id="Qsi-Rw-eC2"/>
+                            <constraint firstItem="cie-SL-gxy" firstAttribute="leading" secondItem="YZg-Bw-uVl" secondAttribute="leading" id="aMo-lV-4qU"/>
+                            <constraint firstItem="uEB-Fe-0Vb" firstAttribute="top" secondItem="YZg-Bw-uVl" secondAttribute="bottom" constant="28" id="gGZ-gB-lwJ"/>
+                            <constraint firstItem="YZg-Bw-uVl" firstAttribute="top" secondItem="cie-SL-gxy" secondAttribute="bottom" constant="8" id="vqB-Aa-ea4"/>
+                            <constraint firstItem="uEB-Fe-0Vb" firstAttribute="centerX" secondItem="dog-CW-yb4" secondAttribute="centerX" id="y3c-g0-Vpz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dog-CW-yb4"/>
                     </view>
+                    <connections>
+                        <outlet property="joinButton" destination="uEB-Fe-0Vb" id="huR-PY-9qq"/>
+                        <outlet property="joinSLTextField" destination="YZg-Bw-uVl" id="yrE-8A-G38"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z9K-FK-QS7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -11,10 +11,25 @@ import UIKit
 
 class CreateJoinViewController: UIViewController {
 
+    @IBOutlet weak var userLabel: UILabel!
+    @IBOutlet weak var createSLButton: UIButton!
+    @IBOutlet weak var joinSLButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        createSLButton.applyButtonDesign()
+        joinSLButton.applyButtonDesign()
+        
     }
 
 
+}
+
+extension UIButton {
+    func applyButtonDesign() {
+        self.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
+        self.layer.cornerRadius = 25.0
+        self.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+    }
 }

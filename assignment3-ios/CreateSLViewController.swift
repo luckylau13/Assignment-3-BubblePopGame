@@ -11,9 +11,13 @@ import UIKit
 
 class CreateSLViewController: UIViewController {
 
+    @IBOutlet weak var shoppingListTextfield: UITextField!
+    @IBOutlet weak var createButton: UIButton!
+    @IBOutlet weak var codeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        createButton.applyButtonDesign()
     }
 
 
