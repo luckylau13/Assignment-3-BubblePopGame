@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+struct UserKeys {
+    static let userID_Key : String = "userID"
+    static let collectionName : String = "users"
+}
