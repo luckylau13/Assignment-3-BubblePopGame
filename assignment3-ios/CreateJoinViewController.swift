@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Firebase
 import UIKit
 
 class CreateJoinViewController: UIViewController {
@@ -20,12 +21,17 @@ class CreateJoinViewController: UIViewController {
         super.viewDidLoad()
         db = Firestore.firestore()
         
+        //load player firstName from
+        let docRef = db.collection(UserKeys.firestoreUserCollection).document("example-user")
+        docRef.getDocument { (document, error) in
+            self.userLabel.text = document?.get("firstName") as? String
+        }
+
         createSLButton.applyButtonDesign()
         joinSLButton.applyButtonDesign()
         
     }
-
-
+    
 }
 
 extension UIButton {

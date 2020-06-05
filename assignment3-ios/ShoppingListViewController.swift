@@ -14,6 +14,7 @@ class ShoppingListViewController: UIViewController {
     var addItemButton = UIButton()
     var shoppingListTableView = UITableView()
     var shoppingList = [ListItem]()
+    var shoppingListCode = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
