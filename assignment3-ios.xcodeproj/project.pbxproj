@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9E4E9720D78CA0CCE9883FA /* Pods_assignment3_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CDF48A8800B5B884C68E6B /* Pods_assignment3_ios.framework */; };
 		B5089B4F2480E40900D69E78 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5089B4E2480E40900D69E78 /* SignUpViewController.swift */; };
 		B5089B512480E4DE00D69E78 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5089B502480E4DE00D69E78 /* LoginViewController.swift */; };
 		B5089B532480E53E00D69E78 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5089B522480E53E00D69E78 /* ForgetPasswordViewController.swift */; };
@@ -23,9 +24,12 @@
 		E36831882477B491000FF793 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E36831862477B491000FF793 /* LaunchScreen.storyboard */; };
 		E3A299B424890BEB007444BA /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A299B324890BEA007444BA /* ListItem.swift */; };
 		E3A299B624890BFF007444BA /* ShoppingListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A299B524890BFF007444BA /* ShoppingListCell.swift */; };
+		E3A299DA248A0C07007444BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3A299D9248A0C07007444BA /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		240D15AE49921A6176E4E988 /* Pods-assignment3-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-assignment3-ios.release.xcconfig"; path = "Target Support Files/Pods-assignment3-ios/Pods-assignment3-ios.release.xcconfig"; sourceTree = "<group>"; };
+		7AA3ADB22158B60F1B770FC8 /* Pods-assignment3-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-assignment3-ios.debug.xcconfig"; path = "Target Support Files/Pods-assignment3-ios/Pods-assignment3-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		B5089B4E2480E40900D69E78 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B5089B502480E4DE00D69E78 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B5089B522480E53E00D69E78 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +38,7 @@
 		B5089B582480E65B00D69E78 /* CreateJoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateJoinViewController.swift; sourceTree = "<group>"; };
 		B5089B5A2480E69600D69E78 /* JoinSLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinSLViewController.swift; sourceTree = "<group>"; };
 		B5089B5C2480E6D300D69E78 /* ShoppingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
+		C3CDF48A8800B5B884C68E6B /* Pods_assignment3_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_assignment3_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E36831782477B48C000FF793 /* assignment3-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "assignment3-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E368317B2477B48C000FF793 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E368317D2477B48C000FF793 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +49,7 @@
 		E36831892477B491000FF793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3A299B324890BEA007444BA /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		E3A299B524890BFF007444BA /* ShoppingListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListCell.swift; sourceTree = "<group>"; };
+		E3A299D9248A0C07007444BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9E4E9720D78CA0CCE9883FA /* Pods_assignment3_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +69,8 @@
 			children = (
 				E368317A2477B48C000FF793 /* assignment3-ios */,
 				E36831792477B48C000FF793 /* Products */,
+				E7746CB87660DAA54506E75B /* Pods */,
+				E94C05A48D48DBC1BFD3CA82 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +92,7 @@
 				E36831842477B491000FF793 /* Assets.xcassets */,
 				E36831862477B491000FF793 /* LaunchScreen.storyboard */,
 				E36831892477B491000FF793 /* Info.plist */,
+				E3A299D9248A0C07007444BA /* GoogleService-Info.plist */,
 				E3A299B224890BD3007444BA /* Components */,
 				E3A299B124890BCB007444BA /* Models */,
 				E3A299B024890BC4007444BA /* Controllers */,
@@ -121,6 +131,23 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		E7746CB87660DAA54506E75B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7AA3ADB22158B60F1B770FC8 /* Pods-assignment3-ios.debug.xcconfig */,
+				240D15AE49921A6176E4E988 /* Pods-assignment3-ios.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E94C05A48D48DBC1BFD3CA82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3CDF48A8800B5B884C68E6B /* Pods_assignment3_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E368318C2477B491000FF793 /* Build configuration list for PBXNativeTarget "assignment3-ios" */;
 			buildPhases = (
+				4B31EFB9F559EB89252E3C3F /* [CP] Check Pods Manifest.lock */,
 				E36831742477B48C000FF793 /* Sources */,
 				E36831752477B48C000FF793 /* Frameworks */,
 				E36831762477B48C000FF793 /* Resources */,
+				7F02DE11A64E33D4B3378D34 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,12 +209,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				E36831882477B491000FF793 /* LaunchScreen.storyboard in Resources */,
+				E3A299DA248A0C07007444BA /* GoogleService-Info.plist in Resources */,
 				E36831852477B491000FF793 /* Assets.xcassets in Resources */,
 				E36831832477B48C000FF793 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B31EFB9F559EB89252E3C3F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-assignment3-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F02DE11A64E33D4B3378D34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-assignment3-ios/Pods-assignment3-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-assignment3-ios/Pods-assignment3-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-assignment3-ios/Pods-assignment3-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E36831742477B48C000FF793 /* Sources */ = {
@@ -346,9 +418,11 @@
 		};
 		E368318D2477B491000FF793 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AA3ADB22158B60F1B770FC8 /* Pods-assignment3-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T5PKFCH6NT;
 				INFOPLIST_FILE = "assignment3-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -363,9 +437,11 @@
 		};
 		E368318E2477B491000FF793 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 240D15AE49921A6176E4E988 /* Pods-assignment3-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T5PKFCH6NT;
 				INFOPLIST_FILE = "assignment3-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
