@@ -10,13 +10,15 @@ import Foundation
 import UIKit
 
 class CreateJoinViewController: UIViewController {
-
+    var db:Firestore!
+    
     @IBOutlet weak var userLabel: UILabel!
     @IBOutlet weak var createSLButton: UIButton!
     @IBOutlet weak var joinSLButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        db = Firestore.firestore()
         
         createSLButton.applyButtonDesign()
         joinSLButton.applyButtonDesign()
