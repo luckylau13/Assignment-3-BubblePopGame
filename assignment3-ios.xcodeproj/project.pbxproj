@@ -25,6 +25,7 @@
 		E3A299B424890BEB007444BA /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A299B324890BEA007444BA /* ListItem.swift */; };
 		E3A299B624890BFF007444BA /* ShoppingListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A299B524890BFF007444BA /* ShoppingListCell.swift */; };
 		E3A299DA248A0C07007444BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3A299D9248A0C07007444BA /* GoogleService-Info.plist */; };
+		E3A299DC248A17B1007444BA /* UserKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A299DB248A17B1007444BA /* UserKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		E3A299B324890BEA007444BA /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		E3A299B524890BFF007444BA /* ShoppingListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListCell.swift; sourceTree = "<group>"; };
 		E3A299D9248A0C07007444BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E3A299DB248A17B1007444BA /* UserKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				E3A299B324890BEA007444BA /* ListItem.swift */,
+				E3A299DB248A17B1007444BA /* UserKeys.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				E368317C2477B48C000FF793 /* AppDelegate.swift in Sources */,
 				B5089B4F2480E40900D69E78 /* SignUpViewController.swift in Sources */,
 				B5089B512480E4DE00D69E78 /* LoginViewController.swift in Sources */,
+				E3A299DC248A17B1007444BA /* UserKeys.swift in Sources */,
 				B5089B532480E53E00D69E78 /* ForgetPasswordViewController.swift in Sources */,
 				E368317E2477B48C000FF793 /* SceneDelegate.swift in Sources */,
 				B5089B552480E58300D69E78 /* ResetPasswordViewController.swift in Sources */,
