@@ -35,6 +35,12 @@ class CreateSLViewController: UIViewController {
         generateCode()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //func prepare for ShoppingListViewController
+        if let shoppingListVC = segue.destination as? ShoppingListViewController{
+                shoppingListVC.shoppingListCode = uniqueCode
+        }
+    }
     
     //generate code for new shopping list
     func generateCode(){
