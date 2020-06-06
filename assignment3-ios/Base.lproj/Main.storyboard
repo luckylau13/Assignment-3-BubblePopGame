@@ -411,6 +411,9 @@ to your email to verify.</string>
                                 <rect key="frame" x="107" y="155" width="200" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="tFEditingChanged:" destination="yf1-ox-owO" eventType="editingChanged" id="ois-bp-9Cy"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter shopping list code:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cie-SL-gxy">
                                 <rect key="frame" x="107" y="123" width="214" height="24"/>
@@ -427,29 +430,20 @@ to your email to verify.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Join"/>
                                 <connections>
-                                    <action selector="joinShoppingList:" destination="yf1-ox-owO" eventType="touchUpInside" id="Wpi-om-vmE"/>
                                     <segue destination="LAV-Hb-lXD" kind="show" identifier="JoinSLtoShoppingListVC" id="BdS-4o-26V"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgp-if-M3c">
-                                <rect key="frame" x="151.5" y="192" width="111" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="dog-CW-yb4" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cie-SL-gxy" secondAttribute="trailing" symbolic="YES" id="0FZ-jF-BYt"/>
                             <constraint firstItem="YZg-Bw-uVl" firstAttribute="leading" secondItem="cie-SL-gxy" secondAttribute="leading" id="5Kp-GV-guZ"/>
-                            <constraint firstItem="bgp-if-M3c" firstAttribute="centerX" secondItem="dog-CW-yb4" secondAttribute="centerX" id="AZ0-4G-buS"/>
                             <constraint firstItem="dog-CW-yb4" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YZg-Bw-uVl" secondAttribute="trailing" constant="82" id="D33-KT-m6Q"/>
                             <constraint firstItem="YZg-Bw-uVl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dog-CW-yb4" secondAttribute="leading" constant="82" id="DaJ-ee-ir9"/>
                             <constraint firstItem="YZg-Bw-uVl" firstAttribute="centerX" secondItem="dog-CW-yb4" secondAttribute="centerX" id="Gsf-bg-kol"/>
                             <constraint firstItem="cie-SL-gxy" firstAttribute="top" secondItem="dog-CW-yb4" secondAttribute="top" constant="35" id="Qsi-Rw-eC2"/>
                             <constraint firstItem="cie-SL-gxy" firstAttribute="leading" secondItem="YZg-Bw-uVl" secondAttribute="leading" id="aMo-lV-4qU"/>
                             <constraint firstItem="uEB-Fe-0Vb" firstAttribute="top" secondItem="YZg-Bw-uVl" secondAttribute="bottom" constant="100" id="gGZ-gB-lwJ"/>
-                            <constraint firstItem="bgp-if-M3c" firstAttribute="top" secondItem="YZg-Bw-uVl" secondAttribute="bottom" constant="3" id="h2L-7y-bU6"/>
                             <constraint firstItem="YZg-Bw-uVl" firstAttribute="top" secondItem="cie-SL-gxy" secondAttribute="bottom" constant="8" id="vqB-Aa-ea4"/>
                             <constraint firstItem="uEB-Fe-0Vb" firstAttribute="centerX" secondItem="dog-CW-yb4" secondAttribute="centerX" id="y3c-g0-Vpz"/>
                         </constraints>
@@ -457,7 +451,6 @@ to your email to verify.</string>
                     </view>
                     <navigationItem key="navigationItem" id="yB6-je-nSB"/>
                     <connections>
-                        <outlet property="errorMessage" destination="bgp-if-M3c" id="sh2-ob-gLF"/>
                         <outlet property="joinButton" destination="uEB-Fe-0Vb" id="huR-PY-9qq"/>
                         <outlet property="joinSLTextField" destination="YZg-Bw-uVl" id="yrE-8A-G38"/>
                     </connections>

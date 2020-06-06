@@ -12,6 +12,7 @@ import UIKit
 
 class CreateSLViewController: UIViewController {
     var db:Firestore!
+    var uniqueCode = ""
     
     @IBOutlet weak var shoppingListTextfield: UITextField!
     @IBOutlet weak var createButton: UIButton!
@@ -22,7 +23,7 @@ class CreateSLViewController: UIViewController {
             "listName" : shoppingListTextfield.text ?? "No Name",
             "items" : [String]()
         ]
-//        db.collection(UserKeys.firestoreListCollection).document(generateCode()).setData(shoppingList)
+        db.collection(UserKeys.firestoreListCollection).document(uniqueCode).setData(shoppingList)
     }
     
     @IBOutlet weak var codeLabel: UILabel!
@@ -37,37 +38,30 @@ class CreateSLViewController: UIViewController {
     
     //generate code for new shopping list
     func generateCode(){
-        let code = "ueCjU"//generateRandomCode(length: 5)
-        checkCodeExist2(initialCode: code)
+        let code = generateRandomCode(length: 5)
+        checkCodeExist(initialCode: code)
     }
     
-    func checkCodeExist2(initialCode: String) {
+    //access "lists" collection, check if generated code exist in the collection
+    func checkCodeExist(initialCode: String) {
         var code = initialCode
+        self.codeLabel.text = ""
         let docRef = db.collection(UserKeys.firestoreListCollection)
-        docRef.document(code).getDocument { (document, error) in
-            if let document = document {
-                if document.exists {
-                    code = self.generateRandomCode(length: 5)
-                    self.codeLabel.text = code
-                } else {
-                    print("Code does not exist")
-                }
-            }
-        }
-    }
-    
-     //access "lists" collection and check if generated code exist in the collection
-     func checkCodeExist(initialCode: String) {
-        var code = initialCode
-        let docRef = db.collection(UserKeys.firestoreListCollection)
-        
+         
         docRef.getDocuments() { (querySnapshot, error) in
-            for document in querySnapshot!.documents {
-                if document.documentID == code {
-                    code = self.generateRandomCode(length: 5)
+            var notUnique = true // Assume not unique
+            while notUnique {
+                for document in querySnapshot!.documents {
+                    if document.documentID == code {
+                        code = self.generateRandomCode(length: 5)
+                        notUnique = true
+                        break
+                    }
                 }
+                notUnique = false
             }
             self.codeLabel.text = code
+            self.uniqueCode = code
         }
     }
     

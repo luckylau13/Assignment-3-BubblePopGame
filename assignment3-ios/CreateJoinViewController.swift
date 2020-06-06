@@ -20,18 +20,20 @@ class CreateJoinViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         db = Firestore.firestore()
+        loadFirstName()
         
-        //load player firstName from
+        createSLButton.applyButtonDesign()
+        joinSLButton.applyButtonDesign()
+    }
+    
+    //load user FirstName from firestore
+    func loadFirstName(){
+        userLabel.text = ""
         let docRef = db.collection(UserKeys.firestoreUserCollection).document("example-user")
         docRef.getDocument { (document, error) in
             self.userLabel.text = document?.get("firstName") as? String
         }
-
-        createSLButton.applyButtonDesign()
-        joinSLButton.applyButtonDesign()
-        
     }
-    
 }
 
 extension UIButton {
