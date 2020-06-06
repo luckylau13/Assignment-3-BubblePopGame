@@ -26,10 +26,10 @@ class CreateJoinViewController: UIViewController {
         joinSLButton.applyButtonDesign()
     }
     
-    //load user FirstName from firestore
+    //Using UserDefault for userID to load user FirstName from firestore
     func loadFirstName(){
         userLabel.text = ""
-        let docRef = db.collection(UserKeys.firestoreUserCollection).document("example-user")
+        let docRef = db.collection(UserKeys.firestoreUserCollection).document(UserKeys.userID_Key)
         docRef.getDocument { (document, error) in
             self.userLabel.text = document?.get("firstName") as? String
         }
