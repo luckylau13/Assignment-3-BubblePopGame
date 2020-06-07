@@ -282,7 +282,8 @@ to your email to verify.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Create"/>
                                 <connections>
-                                    <segue destination="LAV-Hb-lXD" kind="show" id="K3L-cw-Ast"/>
+                                    <action selector="createShoppingList:" destination="UrG-Hh-Zp6" eventType="touchUpInside" id="ye4-ix-Hxv"/>
+                                    <segue destination="LAV-Hb-lXD" kind="show" identifier="CreateSLtoShoppingListVC" id="K3L-cw-Ast"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CODE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1w-Dz-8yk">
@@ -345,17 +346,11 @@ to your email to verify.</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3N-YT-6a6">
-                                <rect key="frame" x="179" y="205" width="56" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6D-DS-tBP">
                                 <rect key="frame" x="57" y="308" width="300" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="YYb-Aa-hQM"/>
-                                    <constraint firstAttribute="width" constant="300" id="enT-hu-F8F"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="9Ph-a6-Zwx"/>
+                                    <constraint firstAttribute="height" constant="50" id="GYa-W5-M8E"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Create Shopping List"/>
@@ -364,10 +359,10 @@ to your email to verify.</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVg-Uf-WL8">
-                                <rect key="frame" x="57" y="400" width="300" height="50"/>
+                                <rect key="frame" x="57" y="408" width="300" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="0Zs-JO-VvD"/>
-                                    <constraint firstAttribute="height" constant="50" id="7e9-bQ-Cfa"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="fgv-j1-zDx"/>
+                                    <constraint firstAttribute="height" constant="50" id="x67-9c-NZe"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Join Shopping List"/>
@@ -375,15 +370,21 @@ to your email to verify.</string>
                                     <segue destination="yf1-ox-owO" kind="show" id="jlq-R1-7Kh"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3N-YT-6a6">
+                                <rect key="frame" x="179" y="171" width="56" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="1XJ-yE-1iY" firstAttribute="bottom" secondItem="Q6D-DS-tBP" secondAttribute="bottom" constant="504" id="9gS-Hf-kmq"/>
-                            <constraint firstItem="s3N-YT-6a6" firstAttribute="top" secondItem="1XJ-yE-1iY" secondAttribute="top" constant="117" id="Acx-0T-df5"/>
-                            <constraint firstItem="Q6D-DS-tBP" firstAttribute="centerX" secondItem="1XJ-yE-1iY" secondAttribute="centerX" id="AkV-fg-LSf"/>
-                            <constraint firstItem="s3N-YT-6a6" firstAttribute="centerX" secondItem="1XJ-yE-1iY" secondAttribute="centerX" id="Ee5-sg-Gdv"/>
-                            <constraint firstItem="oVg-Uf-WL8" firstAttribute="centerX" secondItem="1XJ-yE-1iY" secondAttribute="centerX" id="Mwm-WI-Qsp"/>
-                            <constraint firstItem="oVg-Uf-WL8" firstAttribute="top" secondItem="Q6D-DS-tBP" secondAttribute="bottom" constant="42" id="pca-UD-cvd"/>
+                            <constraint firstItem="s3N-YT-6a6" firstAttribute="centerX" secondItem="1XJ-yE-1iY" secondAttribute="centerX" id="Wl4-cY-4cb"/>
+                            <constraint firstItem="Q6D-DS-tBP" firstAttribute="centerX" secondItem="1XJ-yE-1iY" secondAttribute="centerX" id="Xc4-NS-l6K"/>
+                            <constraint firstItem="Q6D-DS-tBP" firstAttribute="top" secondItem="s3N-YT-6a6" secondAttribute="bottom" constant="101" id="bOf-hq-YgW"/>
+                            <constraint firstItem="s3N-YT-6a6" firstAttribute="top" secondItem="1XJ-yE-1iY" secondAttribute="top" constant="83" id="pyv-Rm-fJM"/>
+                            <constraint firstItem="oVg-Uf-WL8" firstAttribute="top" secondItem="Q6D-DS-tBP" secondAttribute="bottom" constant="50" id="pzv-HU-U7l"/>
+                            <constraint firstItem="oVg-Uf-WL8" firstAttribute="centerX" secondItem="1XJ-yE-1iY" secondAttribute="centerX" id="x33-jA-e7g"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1XJ-yE-1iY"/>
                     </view>
@@ -410,6 +411,9 @@ to your email to verify.</string>
                                 <rect key="frame" x="107" y="155" width="200" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="tFEditingChanged:" destination="yf1-ox-owO" eventType="editingChanged" id="ois-bp-9Cy"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter shopping list code:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cie-SL-gxy">
                                 <rect key="frame" x="107" y="123" width="214" height="24"/>
@@ -418,7 +422,7 @@ to your email to verify.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEB-Fe-0Vb">
-                                <rect key="frame" x="87" y="217" width="240" height="50"/>
+                                <rect key="frame" x="87" y="289" width="240" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="0Wt-Vy-g8V"/>
                                     <constraint firstAttribute="height" constant="50" id="VRu-83-aMe"/>
@@ -426,7 +430,7 @@ to your email to verify.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Join"/>
                                 <connections>
-                                    <segue destination="LAV-Hb-lXD" kind="show" id="BdS-4o-26V"/>
+                                    <segue destination="LAV-Hb-lXD" kind="show" identifier="JoinSLtoShoppingListVC" id="BdS-4o-26V"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -439,7 +443,7 @@ to your email to verify.</string>
                             <constraint firstItem="YZg-Bw-uVl" firstAttribute="centerX" secondItem="dog-CW-yb4" secondAttribute="centerX" id="Gsf-bg-kol"/>
                             <constraint firstItem="cie-SL-gxy" firstAttribute="top" secondItem="dog-CW-yb4" secondAttribute="top" constant="35" id="Qsi-Rw-eC2"/>
                             <constraint firstItem="cie-SL-gxy" firstAttribute="leading" secondItem="YZg-Bw-uVl" secondAttribute="leading" id="aMo-lV-4qU"/>
-                            <constraint firstItem="uEB-Fe-0Vb" firstAttribute="top" secondItem="YZg-Bw-uVl" secondAttribute="bottom" constant="28" id="gGZ-gB-lwJ"/>
+                            <constraint firstItem="uEB-Fe-0Vb" firstAttribute="top" secondItem="YZg-Bw-uVl" secondAttribute="bottom" constant="100" id="gGZ-gB-lwJ"/>
                             <constraint firstItem="YZg-Bw-uVl" firstAttribute="top" secondItem="cie-SL-gxy" secondAttribute="bottom" constant="8" id="vqB-Aa-ea4"/>
                             <constraint firstItem="uEB-Fe-0Vb" firstAttribute="centerX" secondItem="dog-CW-yb4" secondAttribute="centerX" id="y3c-g0-Vpz"/>
                         </constraints>
@@ -595,7 +599,7 @@ to your email to verify.</string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="OH4-eT-RSM"/>
-        <segue reference="lPx-kE-nnR"/>
+        <segue reference="jlq-R1-7Kh"/>
         <segue reference="BdS-4o-26V"/>
         <segue reference="H4h-pz-QYj"/>
     </inferredMetricsTieBreakers>
