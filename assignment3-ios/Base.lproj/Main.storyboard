@@ -577,7 +577,7 @@ to your email to verify.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Sign up"/>
                                 <connections>
-                                    <action selector="SingUpTapped:" destination="lAJ-wH-CEj" eventType="touchUpInside" id="fkD-HW-wS9"/>
+                                    <action selector="SignUpTapped:" destination="lAJ-wH-CEj" eventType="touchUpInside" id="fkD-HW-wS9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baa-2c-QRD">
@@ -664,9 +664,9 @@ to your email to verify.</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="T57-2h-6Fz"/>
+        <segue reference="OH4-eT-RSM"/>
         <segue reference="lPx-kE-nnR"/>
         <segue reference="BdS-4o-26V"/>
-        <segue reference="H4h-pz-QYj"/>
+        <segue reference="vZS-o9-bDc"/>
     </inferredMetricsTieBreakers>
 </document>
