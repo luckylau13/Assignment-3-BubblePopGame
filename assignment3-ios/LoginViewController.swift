@@ -24,6 +24,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        login.applyButtonDesign()
         // Do any additional setup after loading the view.
         db = Firestore.firestore()
     }

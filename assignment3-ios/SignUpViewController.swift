@@ -23,6 +23,7 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        signUp.applyButtonDesign()
         // Do any additional setup after loading the view.
     }
     
@@ -57,7 +58,7 @@ class SignUpViewController: UIViewController {
     }
     
     
-    @IBAction func SingUpTapped(_ sender: Any) {
+    @IBAction func SignUpTapped(_ sender: Any) {
         
         //validate the field
         
@@ -96,7 +97,7 @@ class SignUpViewController: UIViewController {
 
                 }
                 
-                self.trasitionToHome()
+                self.transitionToHome()
                 }
             
             }
@@ -104,7 +105,7 @@ class SignUpViewController: UIViewController {
         
         
     //transition to the login screen
-    func trasitionToHome(){
+    func transitionToHome(){
         let homeViewController = storyboard?.instantiateViewController(identifier: "HomeViewController") as? HomeViewController
             view.window?.rootViewController = homeViewController
             view.window?.makeKeyAndVisible()
