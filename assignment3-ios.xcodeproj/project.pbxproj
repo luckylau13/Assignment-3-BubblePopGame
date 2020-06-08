@@ -11,7 +11,6 @@
 		B5089B4F2480E40900D69E78 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5089B4E2480E40900D69E78 /* SignUpViewController.swift */; };
 		B5089B512480E4DE00D69E78 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5089B502480E4DE00D69E78 /* LoginViewController.swift */; };
 		B5089B532480E53E00D69E78 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5089B522480E53E00D69E78 /* ForgetPasswordViewController.swift */; };
-		B5089B552480E58300D69E78 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5089B542480E58300D69E78 /* ResetPasswordViewController.swift */; };
 		B5089B572480E60A00D69E78 /* CreateSLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5089B562480E60A00D69E78 /* CreateSLViewController.swift */; };
 		B5089B592480E65B00D69E78 /* CreateJoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5089B582480E65B00D69E78 /* CreateJoinViewController.swift */; };
 		B5089B5B2480E69600D69E78 /* JoinSLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5089B5A2480E69600D69E78 /* JoinSLViewController.swift */; };
@@ -34,7 +33,6 @@
 		B5089B4E2480E40900D69E78 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B5089B502480E4DE00D69E78 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B5089B522480E53E00D69E78 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
-		B5089B542480E58300D69E78 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		B5089B562480E60A00D69E78 /* CreateSLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSLViewController.swift; sourceTree = "<group>"; };
 		B5089B582480E65B00D69E78 /* CreateJoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateJoinViewController.swift; sourceTree = "<group>"; };
 		B5089B5A2480E69600D69E78 /* JoinSLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinSLViewController.swift; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 				B5089B4E2480E40900D69E78 /* SignUpViewController.swift */,
 				B5089B502480E4DE00D69E78 /* LoginViewController.swift */,
 				B5089B522480E53E00D69E78 /* ForgetPasswordViewController.swift */,
-				B5089B542480E58300D69E78 /* ResetPasswordViewController.swift */,
 				B5089B562480E60A00D69E78 /* CreateSLViewController.swift */,
 				B5089B582480E65B00D69E78 /* CreateJoinViewController.swift */,
 				B5089B5A2480E69600D69E78 /* JoinSLViewController.swift */,
@@ -280,7 +277,6 @@
 				E3A299DC248A17B1007444BA /* UserKeys.swift in Sources */,
 				B5089B532480E53E00D69E78 /* ForgetPasswordViewController.swift in Sources */,
 				E368317E2477B48C000FF793 /* SceneDelegate.swift in Sources */,
-				B5089B552480E58300D69E78 /* ResetPasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

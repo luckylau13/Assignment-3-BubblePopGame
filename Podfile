@@ -7,6 +7,9 @@ target 'assignment3-ios' do
 	# add the Firebase pod for Google Analytics
 	pod 'Firebase/Analytics'
 	pod 'Firebase/Firestore'
+  
+  #for Authentication
+  pod 'Firebase/Auth'
 
 	# Optionally, include the Swift extensions if you're using Swift.
 	pod 'FirebaseFirestoreSwift'
