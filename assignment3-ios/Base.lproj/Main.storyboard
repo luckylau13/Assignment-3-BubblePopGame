@@ -135,6 +135,7 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="logintapped:" destination="vae-44-D80" eventType="touchUpInside" id="fm0-JX-ID0"/>
+                                    <segue destination="gOU-BT-I0A" kind="show" identifier="loginToJoinViewSegue" id="TUL-mh-FQs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhn-jy-H4z">
@@ -272,28 +273,28 @@ to your email to verify.</string>
             <objects>
                 <viewController storyboardIdentifier="CreateSLViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UrG-Hh-Zp6" customClass="CreateSLViewController" customModule="assignment3_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hhm-fU-sqm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name your shopping list.." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sVG-GG-Rni">
-                                <rect key="frame" x="83" y="65" width="248.5" height="34"/>
+                                <rect key="frame" x="83" y="153" width="248.5" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter shopping list name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KC0-S4-vx9">
-                                <rect key="frame" x="83" y="33" width="219" height="24"/>
+                                <rect key="frame" x="83" y="121" width="219" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shopping list code:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qt-d7-2Qv">
-                                <rect key="frame" x="123.5" y="231" width="167" height="24"/>
+                                <rect key="frame" x="123.5" y="319" width="167" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDr-xg-Jw5">
-                                <rect key="frame" x="87" y="134" width="240" height="50"/>
+                                <rect key="frame" x="87" y="222" width="240" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="j3r-QO-ksy"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="tps-cg-8Zj"/>
@@ -306,7 +307,7 @@ to your email to verify.</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CODE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1w-Dz-8yk">
-                                <rect key="frame" x="153" y="270" width="108" height="48"/>
+                                <rect key="frame" x="153" y="358" width="108" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" red="0.080231872030335549" green="0.22104219951967041" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -366,7 +367,7 @@ to your email to verify.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6D-DS-tBP">
-                                <rect key="frame" x="57" y="264" width="300" height="50"/>
+                                <rect key="frame" x="57" y="308" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="9Ph-a6-Zwx"/>
                                     <constraint firstAttribute="height" constant="50" id="GYa-W5-M8E"/>
@@ -378,7 +379,7 @@ to your email to verify.</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVg-Uf-WL8">
-                                <rect key="frame" x="57" y="364" width="300" height="50"/>
+                                <rect key="frame" x="57" y="408" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="fgv-j1-zDx"/>
                                     <constraint firstAttribute="height" constant="50" id="x67-9c-NZe"/>
@@ -390,7 +391,7 @@ to your email to verify.</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3N-YT-6a6">
-                                <rect key="frame" x="179" y="127" width="56" height="36"/>
+                                <rect key="frame" x="179" y="171" width="56" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -664,9 +665,9 @@ to your email to verify.</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="OH4-eT-RSM"/>
+        <segue reference="T57-2h-6Fz"/>
         <segue reference="lPx-kE-nnR"/>
         <segue reference="BdS-4o-26V"/>
-        <segue reference="vZS-o9-bDc"/>
+        <segue reference="H4h-pz-QYj"/>
     </inferredMetricsTieBreakers>
 </document>

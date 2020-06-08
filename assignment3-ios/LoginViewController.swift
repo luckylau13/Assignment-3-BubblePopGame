@@ -17,6 +17,7 @@ class LoginViewController: UIViewController {
     
     
     var db:Firestore!
+    var loginSuccessful:Bool = false
     
     @IBOutlet weak var username: UITextField! //using email
     @IBOutlet weak var password: UITextField!
@@ -29,6 +30,9 @@ class LoginViewController: UIViewController {
         db = Firestore.firestore()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        loginSuccessful = false
+    }
     
     
     @IBAction func logintapped(_ sender: Any) {
@@ -47,7 +51,7 @@ class LoginViewController: UIViewController {
                 self.alertUser(strTitle: "Error", strMessage: "Unable to login. Incorrect password or username.", viewController: self)
             }
             else{
-               
+                self.loginSuccessful = true
                 let user = Auth.auth().currentUser
                 if let user = user{
                     //let uid = user.uid
@@ -56,21 +60,25 @@ class LoginViewController: UIViewController {
                     defaults.set(emails, forKey: UserKeys.userID_Key)
                     let email = defaults.string(forKey: UserKeys.userID_Key) ?? "example-user"
                     print(email)
-                    self.transitionToCreateJoinViewController()
                 }
-                                
             }
                 
         }
     }
     
-    
-    func transitionToCreateJoinViewController(){
-        let createJoinViewController = storyboard?.instantiateViewController(identifier: "CreateJoinViewController") as? CreateJoinViewController
-            view.window?.rootViewController = createJoinViewController
-            view.window?.makeKeyAndVisible()
-                    
-    }
+    //loginToJoinViewSegue
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+           var segueShouldOccur:Bool = false
+           if identifier == "loginToJoinViewSegue" {
+               if loginSuccessful{
+                   segueShouldOccur = true
+               }
+               if !segueShouldOccur {
+                   return false
+               }
+           }
+           return true
+       }
     
     //alert if error
     public func alertUser(strTitle: String, strMessage: String, viewController: UIViewController) {
