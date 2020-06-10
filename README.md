@@ -15,8 +15,8 @@ This project is worth 30% of the overall mark for this subject.
 
 
 
-Group member:
+Group members:
 Lucky Lau 
 Wen LongHeng 
-Beng Sophea Vong 
+Sopheavong Beng
 
