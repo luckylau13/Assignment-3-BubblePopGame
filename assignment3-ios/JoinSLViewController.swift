@@ -50,7 +50,7 @@ class JoinSLViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //func prepare for ShoppingListViewController
-        if let shoppingListVC = segue.destination as? ShoppingListViewController{
+        if let shoppingListVC = segue.destination as? ShoppingListViewController {
                 shoppingListVC.shoppingListCode = shoppingListCode ?? ""
         }
     }
@@ -58,7 +58,7 @@ class JoinSLViewController: UIViewController {
     func checkCodeExist(code: String){
         print("checking existence")
         codeExist = false
-        let docRef = db.collection(UserKeys.firestoreListCollection).document(code)
+        let docRef = db.collection(Keys.firestoreListCollection).document(code)
         docRef.getDocument { (document, error) in
             if let document = document, document.exists {
                 self.codeExist = true

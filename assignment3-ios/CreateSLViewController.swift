@@ -8,6 +8,7 @@
 
 import Foundation
 import Firebase
+import FirebaseFirestoreSwift
 import UIKit
 
 class CreateSLViewController: UIViewController {
@@ -19,11 +20,23 @@ class CreateSLViewController: UIViewController {
     
     //create new document in firestore with an array of string ie. items
     @IBAction func createShoppingList(_ sender: Any) {
-        let shoppingList : [String : Any] = [
-            "listName" : shoppingListTextfield.text ?? "No Name",
-            "items" : [String]()
-        ]
-        db.collection(UserKeys.firestoreListCollection).document(uniqueCode).setData(shoppingList)
+        let listName = shoppingListTextfield.text ?? "No Name"
+        if !listName.isEmpty {
+            // Create list document
+            db.collection(Keys.firestoreListCollection).document(uniqueCode).setData([
+                "listName" : listName
+            ])
+            
+            // Add list code to user
+            let userEmail = Firebase.Auth.auth().currentUser?.email ?? "example-user"
+            let docRef = db.collection(Keys.firestoreUserCollection).document(userEmail)
+            docRef.getDocument { (document, error) in
+                let attribute = "lists"
+                var lists = document?[attribute] as? [String] ?? [String]()
+                lists.append(self.uniqueCode)
+                docRef.setData([attribute : lists], merge: true)
+            }
+        }
     }
     
     @IBOutlet weak var codeLabel: UILabel!
@@ -52,7 +65,7 @@ class CreateSLViewController: UIViewController {
     func checkCodeExist(initialCode: String) {
         var code = initialCode
         self.codeLabel.text = ""
-        let docRef = db.collection(UserKeys.firestoreListCollection)
+        let docRef = db.collection(Keys.firestoreListCollection)
          
         docRef.getDocuments() { (querySnapshot, error) in
             var notUnique = true // Assume not unique
