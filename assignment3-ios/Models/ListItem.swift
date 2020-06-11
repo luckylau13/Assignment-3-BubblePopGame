@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class ListItem {
+    var id : String = ""
     var title : String = "No Name"
     var completed : Bool = false
     var statusImage : UIImage {
@@ -23,5 +24,18 @@ class ListItem {
     init(_ title: String, completed: Bool = false) {
         self.title = title
         self.completed = completed
+    }
+    
+    init(_ id : String, from dictionary: [String : Any]) {
+        self.id = id
+        self.title = dictionary["title"] as? String ?? "Untitled Item"
+        self.completed = dictionary["completed"] as? Bool ?? false
+    }
+    
+    var dictionary : [String : Any] {
+        return [
+            "title" : title,
+            "completed" : completed
+        ]
     }
 }

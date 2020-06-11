@@ -44,7 +44,7 @@ class LoginViewController: UIViewController {
         //crate cleaned version
         
         //sign in the user
-        Auth.auth().signIn(withEmail: email, password: passwordT){
+        Auth.auth().signIn(withEmail: email, password: passwordT) {
             (result, error) in
             
             if error != nil{
@@ -53,32 +53,32 @@ class LoginViewController: UIViewController {
             else{
                 self.loginSuccessful = true
                 let user = Auth.auth().currentUser
-                if let user = user{
+                if let user = user {
                     //let uid = user.uid
                     let emails = user.email ?? "example-user"
                     let defaults = UserDefaults.standard
-                    defaults.set(emails, forKey: UserKeys.userID_Key)
-                    let email = defaults.string(forKey: UserKeys.userID_Key) ?? "example-user"
+                    defaults.set(emails, forKey: Keys.userID_Key)
+                    let email = defaults.string(forKey: Keys.userID_Key) ?? "example-user"
                     print(email)
                 }
+                self.performSegue(withIdentifier: "loginToJoinViewSegue", sender: self)
             }
-                
         }
     }
     
     //loginToJoinViewSegue
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-           var segueShouldOccur:Bool = false
-           if identifier == "loginToJoinViewSegue" {
-               if loginSuccessful{
-                   segueShouldOccur = true
-               }
-               if !segueShouldOccur {
-                   return false
-               }
+       var segueShouldOccur:Bool = false
+       if identifier == "loginToJoinViewSegue" {
+           if loginSuccessful{
+               segueShouldOccur = true
            }
-           return true
+           if !segueShouldOccur {
+               return false
+           }
        }
+       return true
+   }
     
     //alert if error
     public func alertUser(strTitle: String, strMessage: String, viewController: UIViewController) {
@@ -86,7 +86,7 @@ class LoginViewController: UIViewController {
            let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
            myAlert.addAction(okAction)
            viewController.present(myAlert, animated: true, completion: nil)
-       }
+   }
     
 
 }
