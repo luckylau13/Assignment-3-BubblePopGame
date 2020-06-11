@@ -12,12 +12,21 @@ import FirebaseFirestoreSwift
 
 class ShoppingListViewController: UIViewController {
     var db : Firestore!
-    
+    var listener : ListenerRegistration!
     var newItemTextField = UITextField()
     var addItemButton = UIButton()
+    
     var shoppingListTableView = UITableView()
     var shoppingList = [ListItem]()
     var shoppingListCode = ""
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.shoppingList.removeAll()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        listener.remove()
+    }
     
     override func viewDidLoad() {
         db = Firestore.firestore()
@@ -145,12 +154,10 @@ extension ShoppingListViewController : UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             let row = indexPath.row
-            let item = shoppingList[row]
-            shoppingList.remove(at: row)
+            let item = shoppingList.remove(at: row)
             
-            let animation = UITableView.RowAnimation.automatic
             self.shoppingListTableView.beginUpdates()
-            self.shoppingListTableView.deleteRows(at: [indexPath], with: animation)
+            self.shoppingListTableView.deleteRows(at: [indexPath], with: .automatic)
             self.shoppingListTableView.endUpdates()
             
             let itemID = item.id
@@ -198,7 +205,7 @@ extension ShoppingListViewController {
     }
     
     func addListener() {
-        db
+        listener = db
         .collection(Keys.firestoreListCollection)
         .document(shoppingListCode)
         .collection(Keys.firestoreItemsSubcollection)

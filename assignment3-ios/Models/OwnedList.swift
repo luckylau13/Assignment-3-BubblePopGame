@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+class OwnedList {
+    var id : String = ""
+    var listName : String = ""
+    
+    init(id: String = "-----", name: String = "Untitled") {
+        self.id = id
+        self.listName = name
+    }
+}

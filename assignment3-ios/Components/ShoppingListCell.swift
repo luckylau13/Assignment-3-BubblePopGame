@@ -20,7 +20,6 @@ class ShoppingListCell: UITableViewCell {
         addSubview(itemStatusImageView)
         
         configureTitle()
-        configureStatus()
         
         setTitleConstraints()
         setStatusConstraints()
@@ -47,10 +46,6 @@ class ShoppingListCell: UITableViewCell {
     func configureTitle() {
         itemTitleLabel.numberOfLines = 0
         itemTitleLabel.adjustsFontSizeToFitWidth = true
-    }
-    
-    func configureStatus() {
-        
     }
     
     func setStatusConstraints() {

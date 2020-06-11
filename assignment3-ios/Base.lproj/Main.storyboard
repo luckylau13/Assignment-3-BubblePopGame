@@ -413,6 +413,7 @@ to your email to verify.</string>
                         <outlet property="createSLButton" destination="Q6D-DS-tBP" id="I62-D1-XZ9"/>
                         <outlet property="joinSLButton" destination="oVg-Uf-WL8" id="SSZ-R8-aFK"/>
                         <outlet property="userLabel" destination="s3N-YT-6a6" id="thk-6R-ITi"/>
+                        <segue destination="LAV-Hb-lXD" kind="show" identifier="showList" id="7hR-uW-4qK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IEF-Kj-bYs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -666,8 +667,8 @@ to your email to verify.</string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="T57-2h-6Fz"/>
-        <segue reference="lPx-kE-nnR"/>
-        <segue reference="BdS-4o-26V"/>
+        <segue reference="jlq-R1-7Kh"/>
+        <segue reference="7hR-uW-4qK"/>
         <segue reference="H4h-pz-QYj"/>
     </inferredMetricsTieBreakers>
 </document>
