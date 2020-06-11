@@ -46,7 +46,10 @@ class CreateSLViewController: UIViewController {
         db = Firestore.firestore()
         createButton.applyButtonDesign()
         generateCode()
+        
     }
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //func prepare for ShoppingListViewController
@@ -92,3 +95,5 @@ class CreateSLViewController: UIViewController {
     
     
 }
+
+
