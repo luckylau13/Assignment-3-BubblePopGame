@@ -21,6 +21,8 @@
 		E36831832477B48C000FF793 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E36831812477B48C000FF793 /* Main.storyboard */; };
 		E36831852477B491000FF793 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E36831842477B491000FF793 /* Assets.xcassets */; };
 		E36831882477B491000FF793 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E36831862477B491000FF793 /* LaunchScreen.storyboard */; };
+		E39EFC3D24923D4E00F53F6D /* OwnedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39EFC3C24923D4E00F53F6D /* OwnedList.swift */; };
+		E39EFC3F24923D7900F53F6D /* OwnedListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39EFC3E24923D7900F53F6D /* OwnedListCell.swift */; };
 		E3A299B424890BEB007444BA /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A299B324890BEA007444BA /* ListItem.swift */; };
 		E3A299B624890BFF007444BA /* ShoppingListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A299B524890BFF007444BA /* ShoppingListCell.swift */; };
 		E3A299DA248A0C07007444BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3A299D9248A0C07007444BA /* GoogleService-Info.plist */; };
@@ -46,6 +48,8 @@
 		E36831842477B491000FF793 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E36831872477B491000FF793 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E36831892477B491000FF793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E39EFC3C24923D4E00F53F6D /* OwnedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnedList.swift; sourceTree = "<group>"; };
+		E39EFC3E24923D7900F53F6D /* OwnedListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnedListCell.swift; sourceTree = "<group>"; };
 		E3A299B324890BEA007444BA /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		E3A299B524890BFF007444BA /* ShoppingListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListCell.swift; sourceTree = "<group>"; };
 		E3A299D9248A0C07007444BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 		E3A299B124890BCB007444BA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E39EFC3C24923D4E00F53F6D /* OwnedList.swift */,
 				E3A299B324890BEA007444BA /* ListItem.swift */,
 				E3A299DB248A17B1007444BA /* Keys.swift */,
 			);
@@ -127,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				E3A299B524890BFF007444BA /* ShoppingListCell.swift */,
+				E39EFC3E24923D7900F53F6D /* OwnedListCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -266,6 +272,7 @@
 			files = (
 				E3A299B424890BEB007444BA /* ListItem.swift in Sources */,
 				B5089B5D2480E6D300D69E78 /* ShoppingListViewController.swift in Sources */,
+				E39EFC3F24923D7900F53F6D /* OwnedListCell.swift in Sources */,
 				B5089B592480E65B00D69E78 /* CreateJoinViewController.swift in Sources */,
 				B5089B5B2480E69600D69E78 /* JoinSLViewController.swift in Sources */,
 				E36831802477B48C000FF793 /* HomeViewController.swift in Sources */,
@@ -277,6 +284,7 @@
 				E3A299DC248A17B1007444BA /* Keys.swift in Sources */,
 				B5089B532480E53E00D69E78 /* ForgetPasswordViewController.swift in Sources */,
 				E368317E2477B48C000FF793 /* SceneDelegate.swift in Sources */,
+				E39EFC3D24923D4E00F53F6D /* OwnedList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
