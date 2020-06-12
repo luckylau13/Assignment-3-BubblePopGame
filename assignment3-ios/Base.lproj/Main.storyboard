@@ -30,7 +30,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <segue destination="vae-44-D80" kind="show" id="H4h-pz-QYj"/>
+                                    <segue destination="vae-44-D80" kind="show" id="pUI-Dx-oW4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBa-hh-sq0">
@@ -40,7 +40,7 @@
                                 </constraints>
                                 <state key="normal" title="Sign up now"/>
                                 <connections>
-                                    <segue destination="lAJ-wH-CEj" kind="show" id="OH4-eT-RSM"/>
+                                    <segue destination="lAJ-wH-CEj" kind="show" id="fIl-hV-Pvg"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shopping List 3000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGo-F9-9ye">
@@ -58,7 +58,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Join shopping list"/>
                                 <connections>
-                                    <segue destination="yf1-ox-owO" kind="show" id="lPx-kE-nnR"/>
+                                    <segue destination="yf1-ox-owO" kind="show" id="OHp-t8-LgU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -451,7 +451,7 @@ to your email to verify.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Join"/>
                                 <connections>
-                                    <segue destination="LAV-Hb-lXD" kind="show" identifier="JoinSLtoShoppingListVC" id="BdS-4o-26V"/>
+                                    <action selector="joinButtonPressed:" destination="yf1-ox-owO" eventType="touchUpInside" id="Mn9-BN-bpj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -474,6 +474,7 @@ to your email to verify.</string>
                     <connections>
                         <outlet property="joinButton" destination="uEB-Fe-0Vb" id="huR-PY-9qq"/>
                         <outlet property="joinSLTextField" destination="YZg-Bw-uVl" id="yrE-8A-G38"/>
+                        <segue destination="LAV-Hb-lXD" kind="show" identifier="JoinSLtoShoppingListVC" id="dut-d7-UL9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z9K-FK-QS7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -666,9 +667,9 @@ to your email to verify.</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="T57-2h-6Fz"/>
-        <segue reference="jlq-R1-7Kh"/>
-        <segue reference="7hR-uW-4qK"/>
-        <segue reference="H4h-pz-QYj"/>
+        <segue reference="fIl-hV-Pvg"/>
+        <segue reference="OHp-t8-LgU"/>
+        <segue reference="dut-d7-UL9"/>
+        <segue reference="pUI-Dx-oW4"/>
     </inferredMetricsTieBreakers>
 </document>
