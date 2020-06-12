@@ -26,12 +26,17 @@ class JoinSLViewController: UIViewController {
     
     //Check textfield value 
     @IBAction func tFEditingChanged(_ sender: UITextField) {
+//        if joinSLTextField.text?.count ?? 0 >= 5 {
+//            checkCodeExist(code: joinSLTextField.text ?? "")
+//        }
+//        print("Editing..")
+    }
+    
+    @IBAction func joinButtonPressed(_ sender: Any) {
         if joinSLTextField.text?.count ?? 0 >= 5 {
             checkCodeExist(code: joinSLTextField.text ?? "")
         }
-        print("Editing..")
     }
-    
     //condition check if Segue should happen
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         var segueShouldOccur:Bool = false
@@ -57,14 +62,17 @@ class JoinSLViewController: UIViewController {
 
     func checkCodeExist(code: String){
         print("checking existence")
-        codeExist = false
+//        codeExist = false
         let docRef = db.collection(Keys.firestoreListCollection).document(code)
         docRef.getDocument { (document, error) in
             if let document = document, document.exists {
                 self.codeExist = true
                 self.shoppingListCode = code
                 print("Exist!")
+            } else {
+                self.codeExist = false
             }
+            self.performSegue(withIdentifier: "JoinSLtoShoppingListVC", sender: nil)
         }
     }
     
